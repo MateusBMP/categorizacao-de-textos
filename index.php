@@ -2,7 +2,8 @@
 
 require_once("vendor/autoload.php");
 
-use App\CategorizacaoDeTextos;
+use App\Models\Textos;
+use App\Categorizacao;
 
 $textos = [
     ["a", "b", "c"],
@@ -11,12 +12,12 @@ $textos = [
     ["a", "d", "e"]
 ];
 
-$categorizacao_de_textos = new CategorizacaoDeTextos($textos);
+$categorizacao = new Categorizacao($textos);
 
 echo "Texto submetido:";
-$categorizacao_de_textos->exibir_texto();
+$categorizacao->textos->show();
 echo "\n\n Matriz de similaridade:";
-$categorizacao_de_textos->exibir_matriz_de_similaridade();
-echo "\n\n Matriz de adjacência:";
-$categorizacao_de_textos->exibir_matriz_de_adjacencia();
+$categorizacao->similaridade->show();
+echo "\n\n Cromossomos:";
+$categorizacao->cromossomos->show();
 echo "\n";
