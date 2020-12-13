@@ -1,0 +1,19 @@
+{
+    "name": "mateusbmp/categorizacao-de-textos",
+    "description": "Categorização de Textos com o Algoritmo Genético de Holland",
+    "type": "library",
+    "authors": [
+        {
+            "name": "MateusBMP",
+            "email": "mbmp@ic.ufal.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "license": "GNU",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
