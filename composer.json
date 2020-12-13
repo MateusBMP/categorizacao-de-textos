@@ -9,7 +9,7 @@
         }
     ],
     "minimum-stability": "stable",
-    "license": "GNU",
+    "license": "MIT",
     "require": {},
     "autoload": {
         "psr-4": {
