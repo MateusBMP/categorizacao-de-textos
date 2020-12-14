@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Models\Textos;
+use App\Models\Similaridade;
 use App\Collections\MatrizBidimensional;
 
 /**
@@ -73,5 +74,25 @@ class Adjacencia extends MatrizBidimensional
         $this->set($matriz_de_adjacencia);
 
         return $this;
+    }
+
+    /**
+     * Calcula o valor de adaptação da matriz de adjacência, baseada na matriz de similaridade. O
+     * cálculo da adaptação equivale à soma dos produtos dos valores da matriz A(i,j) com a matriz
+     * S(i,j), sendo A a matriz de adjacência e S a matriz de similaridade.
+     * 
+     * @param  \App\Models\Similaridade $similaridade  Matriz de similaridade
+     * @return int
+     */
+    public function adaptacao(Similaridade $similaridade)
+    {
+        $adaptacao = 0;
+
+        for ($i = 0; $i < $similaridade->count(); $i++)
+            for ($j = 0; $j < $similaridade->count(); $j++) {
+                $adaptacao += $similaridade->get()[$i][$j] * $this->get()[$i][$j]; 
+            }
+
+        return $adaptacao;
     }
 }
