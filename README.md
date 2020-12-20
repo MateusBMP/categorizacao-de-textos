@@ -11,6 +11,6 @@ Categorização de Textos com o Algoritmo Genético de Holland.
 
 - [x] construir a população formada por 10 matriz de adjacencia
 - [x] calcular a adaptação de cada cromossomo
-- [] implementar cruzamento de um ponto de corte, na horizontal e na vertical
-- [] implementar mutação, sendo ela a troca de 2 linhas ou 2 colunas
+- [x] implementar cruzamento de um ponto de corte, na horizontal e na vertical
+- [x] implementar mutação, sendo ela a troca de 2 linhas ou 2 colunas
 - [] definir critério de parada: rodar o loop 10 vezes

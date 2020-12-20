@@ -3,7 +3,6 @@
 namespace App;
 
 use App\Models\Textos;
-use App\Models\Adjacencia;
 use App\Models\Cromossomos;
 use App\Models\Similaridade;
 use App\Helpers\ObjectHelper;
@@ -23,14 +22,9 @@ use App\Helpers\ObjectHelper;
 class Categorizacao
 {
     /**
-     * @var App\Models\Textos
+     * @var \App\Models\Textos
      */
     private $_textos;
-
-    /**
-     * @var App\Models\Similaridade
-     */
-    private $_similaridade;
 
     /**
      * @var array  População de cromossomos 
@@ -45,8 +39,6 @@ class Categorizacao
     public function __construct($textos)
     {
         $this->textos($textos);
-        $this->similaridade($this->textos);
-        $this->create_cromossomos();
     }
 
     public function __get($name) {
@@ -64,33 +56,32 @@ class Categorizacao
     /**
      * Inicializa matriz de cromossomos
      * 
+     * @param  \App\Models\Textos $textos
+     * @param  int $n_cromossomos
      * @return void
      */
-    private function create_cromossomos()
+    private function create_cromossomos(Textos $textos, int $n_cromossomos)
     {
-        $this->_cromossomos = new Cromossomos($this->textos, $this->n_cromossomos);
+        $this->_cromossomos = new Cromossomos($textos, $n_cromossomos);
+        $this->_cromossomos->order_by_similaridade($this->textos->similaridade());
+        $this->_cromossomos->handle_cruzamento(10, 80);
+        $this->_cromossomos->handle_mutacao(10, 80);
     }
 
     public function textos($value = null)
     {
-        if (isset($value)) 
+        if (isset($value)) {
             $this->_textos = new Textos($value);
-        else 
+            $this->create_cromossomos($this->textos, $this->n_cromossomos);
+        } else {
             return $this->_textos;
-    }
-
-    public function similaridade($value = null)
-    {
-        if (isset($value)) 
-            $this->_similaridade = new Similaridade($value);
-        else 
-            return $this->_similaridade;
+        }
     }
 
     public function cromossomos($value = null)
     {
         if (isset($value)) 
-            throw new \Exception('Setter not allowed for property: ' . $name);
+            throw new \Exception('Setter not allowed for property: ' . $value);
         else 
             return $this->_cromossomos;
     }

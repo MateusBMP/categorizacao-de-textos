@@ -29,10 +29,56 @@ class MatrizBidimensional
         return $this->matriz;
     }
 
+    /**
+     * Retorna os valores da linha desejada de uma matriz bidimensional.
+     * 
+     * @param  int $pos 
+     * @return array
+     */
+    public function get_line($pos)
+    {
+        return $this->get()[$pos];
+    }
+
+    /**
+     * Retorna os valores da coluna desejada de uma matriz bidimensional.
+     * 
+     * @param  int $pos 
+     * @return array
+     */
+    public function get_column($pos)
+    {
+        $array = [];
+
+        foreach ($this->get() as $line)
+            array_push($array, $line[$pos]);
+
+        return $array;
+    }
+
     public function count()
     {
         $matriz = is_array($this->get()) ? $this->get() : array();
         return count($matriz);
+    }
+
+    /**
+     * Calcula a transposta da matriz bidimensional.
+     * 
+     * @return \App\Collections\MatrizBidimensional
+     */
+    public function transpose()
+    {
+        $self = clone $this;
+        $transpose = [];
+
+        for($i = 0; $i < $this->count(); $i++)
+            for($j = 0; $j < $this->count(); $j++)
+                $transpose[$j][$i] = $this->get()[$i][$j];
+
+        $self->set($transpose);
+
+        return $self;
     }
 
     /**

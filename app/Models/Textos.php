@@ -13,5 +13,13 @@ use App\Collections\MatrizBidimensional;
  */
 class Textos extends MatrizBidimensional
 {
-    //
+    /** 
+     * Matriz de similaridade do texto.
+     * 
+     * @return \App\Models\Similaridade
+     */
+    public function similaridade()
+    {
+        return new Similaridade($this);
+    }
 }

@@ -17,7 +17,7 @@ $categorizacao = new Categorizacao($textos);
 echo "Texto submetido:";
 $categorizacao->textos->show();
 echo "\n\n Matriz de similaridade:";
-$categorizacao->similaridade->show();
+$categorizacao->textos->similaridade()->show();
 echo "\n\n Cromossomos:";
 $categorizacao->cromossomos->show();
 echo "\n";
