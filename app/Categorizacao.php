@@ -24,20 +24,21 @@ class Categorizacao
     /**
      * @var \App\Models\Textos
      */
-    private $_textos;
+    private Textos $_textos;
 
     /**
-     * @var array  População de cromossomos 
+     * @var \App\Models\Cromossomos  População de cromossomos 
      */
-    private $_cromossomos;
+    private Cromossomos $_cromossomos;
 
     /**
-     * @var int  Número de cromossomos gerados na população
+     * @var int  Número de cromossomos gerados ao estabelecer um novo texto.
      */
-    public $n_cromossomos = 10;
+    public int $n_cromossomos;
 
-    public function __construct($textos)
+    public function __construct($textos, $n_cromossomos = 10)
     {
+        $this->n_cromossomos = $n_cromossomos;
         $this->textos($textos);
     }
 
@@ -63,9 +64,6 @@ class Categorizacao
     private function create_cromossomos(Textos $textos, int $n_cromossomos)
     {
         $this->_cromossomos = new Cromossomos($textos, $n_cromossomos);
-        $this->_cromossomos->order_by_similaridade($this->textos->similaridade());
-        $this->_cromossomos->handle_cruzamento(10, 80);
-        $this->_cromossomos->handle_mutacao(10, 80);
     }
 
     public function textos($value = null)
@@ -84,5 +82,28 @@ class Categorizacao
             throw new \Exception('Setter not allowed for property: ' . $value);
         else 
             return $this->_cromossomos;
+    }
+
+    /**
+     * Efetua o treinamento dos cromossomos. Para isso, deve-se estabelecer a taxa de cruzamento,
+     * quantidade de cruzamentos, taxa de mutação, quantidade de mutações e quantos cromossomos 
+     * serão mantidos após o treinamento. Os cromossomos mantidos serão os mais bem adaptados, de 
+     * acordo com o grau de similaridade de cada cromossomo. Ao final do treinamento uma nova 
+     * geração será registrada na lista de cromossomos.
+     * 
+     * @param  int $q_cruzamento   Quantidade de cruzamentos
+     * @param  int $t_cruzamento   Taxa de cruzamento, entre 0 e 100 (por cento)
+     * @param  int $q_mutacao      Quantidade de mutações
+     * @param  int $t_mutacao      Taxa de mutação, entre 0 e 100 (por cento)
+     * @param  int $n_cromossomos  Número de cromossomos que serão mantidos
+     * @return \App\Categorizacao
+     */
+    public function treinar(int $q_cruzamento = 10, int $t_cruzamento = 50, int $q_mutacao = 10, int $t_mutacao = 50, $n_cromossomos = 10)
+    {
+        $this->cromossomos->handle_cruzamento($q_cruzamento, $t_cruzamento);
+        $this->cromossomos->handle_mutacao($q_mutacao, $t_mutacao);
+        $this->cromossomos->order_by_adaptacao();
+        $this->cromossomos->podar($n_cromossomos);
+        $this->cromossomos->registrar_geracao();
     }
 }
