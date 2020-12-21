@@ -85,25 +85,29 @@ class Categorizacao
     }
 
     /**
-     * Efetua o treinamento dos cromossomos. Para isso, deve-se estabelecer a taxa de cruzamento,
-     * quantidade de cruzamentos, taxa de mutação, quantidade de mutações e quantos cromossomos 
-     * serão mantidos após o treinamento. Os cromossomos mantidos serão os mais bem adaptados, de 
-     * acordo com o grau de similaridade de cada cromossomo. Ao final do treinamento uma nova 
-     * geração será registrada na lista de cromossomos.
+     * Registra uma evolução dos cromossomos. Para isso, deve-se estabelecer a taxa de cruzamento,
+     * quantidade de cruzamentos, taxa de mutação, quantidade de mutações, quantos cromossomos 
+     * serão mantidos após a evolução e se serão mantidos cromossomos iguais. Os cromossomos 
+     * mantidos serão os mais bem adaptados, distintos ou não, de acordo com o grau de similaridade 
+     * de cada cromossomo. Ao final da evolução, uma nova geração será registrada na lista de 
+     * cromossomos.
      * 
-     * @param  int $q_cruzamento   Quantidade de cruzamentos
-     * @param  int $t_cruzamento   Taxa de cruzamento, entre 0 e 100 (por cento)
-     * @param  int $q_mutacao      Quantidade de mutações
-     * @param  int $t_mutacao      Taxa de mutação, entre 0 e 100 (por cento)
-     * @param  int $n_cromossomos  Número de cromossomos que serão mantidos
+     * @param  int  $q_cruzamento   Quantidade de cruzamentos
+     * @param  int  $t_cruzamento   Taxa de cruzamento, entre 0 e 100 (por cento)
+     * @param  int  $q_mutacao      Quantidade de mutações
+     * @param  int  $t_mutacao      Taxa de mutação, entre 0 e 100 (por cento)
+     * @param  int  $n_cromossomos  Número de cromossomos que serão mantidos
+     * @param  bool $distintos      Se deseja manter apenas cromossomos distintos
      * @return \App\Categorizacao
      */
-    public function treinar(int $q_cruzamento = 10, int $t_cruzamento = 50, int $q_mutacao = 10, int $t_mutacao = 50, $n_cromossomos = 10)
+    public function evoluir(int $q_cruzamento = 10, int $t_cruzamento = 50, int $q_mutacao = 10, int $t_mutacao = 50, $n_cromossomos = 10, $distintos = true)
     {
         $this->cromossomos->handle_cruzamento($q_cruzamento, $t_cruzamento);
         $this->cromossomos->handle_mutacao($q_mutacao, $t_mutacao);
         $this->cromossomos->order_by_adaptacao();
-        $this->cromossomos->podar($n_cromossomos);
+        $this->cromossomos->podar($n_cromossomos, $distintos);
         $this->cromossomos->registrar_geracao();
+
+        return $this;
     }
 }

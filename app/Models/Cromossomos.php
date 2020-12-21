@@ -220,15 +220,47 @@ class Cromossomos
     /**
      * Efetua a poda da lista de cromossomos mantendo apenas o número desejado de cromossomos. Se 
      * o número de cromossomos a serem mantidos não for informado, serão mantidos 10 cromossomos.
+     * Também pode-se solicitar manter apenas cromossomos distintos.
      * 
      * @param  int $amount  Quantidade de cromossomos que serão mantidos
      * @return \App\Models\Cromossomos
      */
-    public function podar(int $amount = 10)
+    public function podar(int $amount = 10, bool $distinct = true)
     {
-        $this->set(array_slice($this->get(), 0, $amount));
+        $data = ($distinct) ? 
+            $this->distinct() :
+            $this->get();
+            
+        $this->set(array_slice($data, 0, $amount));
         
         return $this;
+    }
+
+    /**
+     * Seleciona apenas os cromossomos distintos da lista atual de cromossomos.
+     * 
+     * @return array
+     */
+    public function distinct()
+    {
+        // Cria objetos de teste e retorno
+        $real_data = array();
+        $json_data = array();
+
+        // Analisa cada cromossomo
+        foreach ($this->get() as $cromossomo)
+        {
+            // Transforma objeto em json
+            $_needle = json_encode($cromossomo->get());
+
+            // Se objeto ainda não foi lido, guarda objeto na lista de teste e retorno
+            if (!in_array($_needle, $json_data)) {
+                array_push($real_data, $cromossomo);
+                array_push($json_data, $_needle);
+            }
+        }
+
+        return $real_data;
     }
 
     /**

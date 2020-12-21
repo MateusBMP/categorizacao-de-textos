@@ -12,7 +12,7 @@ $textos = [
     ["a", "b", "d"],
     ["a", "d", "e"]
 ];
-$n_treinamentos = 100000;
+$n_evolucoes = 100;
 $categorizacao = new Categorizacao($textos);
 
 echo "Texto submetido:\n";
@@ -25,23 +25,23 @@ $max_adjacencia = new Adjacencia($categorizacao->textos->similaridade->get());
 $max_adaptacao = $max_adjacencia->adaptacao($categorizacao->textos->similaridade);
 echo "\n\n Adaptação máxima: {$max_adaptacao}";
 
-echo "\n\n Efetuar treinamento até adaptação máxima...\n\n";
+echo "\n\n Efetuar evolução $n_evolucoes vezes...\n\n";
 $categorizacao->cromossomos->order_by_adaptacao();
-$maior_adaptacao_atual = $categorizacao->cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
-while ($maior_adaptacao_atual < $max_adaptacao) {
-    ProgressBar::show_status($maior_adaptacao_atual ?? 1, $max_adaptacao);
+// $maior_adaptacao_atual = $categorizacao->cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
+for ($i = 1; $i <= $n_evolucoes; $i++) {
+    ProgressBar::show_status($i, $n_evolucoes);
 
-    $categorizacao->treinar();
+    $categorizacao->evoluir();
 
-    $nova_adaptacao = $categorizacao->cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
+    // $nova_adaptacao = $categorizacao->cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
 
-    if ($nova_adaptacao != $maior_adaptacao_atual)
-        echo "\n";
+    // if ($nova_adaptacao != $maior_adaptacao_atual)
+    //     echo "\n";
 
-    $maior_adaptacao_atual = $nova_adaptacao;
+    // $maior_adaptacao_atual = $nova_adaptacao;
 }
 
-echo "\n Cromossomos após treinamento:\n";
+echo "\n Cromossomos após evolução:\n";
 $categorizacao->cromossomos->order_by_adaptacao();
 $categorizacao->cromossomos->show();
 
