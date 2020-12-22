@@ -220,18 +220,21 @@ class Cromossomos
     /**
      * Efetua a poda da lista de cromossomos mantendo apenas o número desejado de cromossomos. Se 
      * o número de cromossomos a serem mantidos não for informado, serão mantidos 10 cromossomos.
-     * Também pode-se solicitar manter apenas cromossomos distintos.
+     * Também pode-se solicitar manter apenas cromossomos distintos e válidos, de acordo com a 
+     * regra de conexões.
      * 
      * @param  int $amount  Quantidade de cromossomos que serão mantidos
      * @return \App\Models\Cromossomos
      */
-    public function podar(int $amount = 10, bool $distinct = true)
+    public function podar(int $amount = 10, bool $distinct = true, $valid = true)
     {
-        $data = ($distinct) ? 
-            $this->distinct() :
-            $this->get();
+        if ($distinct)
+            $this->set($this->distinct());
+
+        if ($valid)
+            $this->set($this->valid());
             
-        $this->set(array_slice($data, 0, $amount));
+        $this->set(array_slice($this->get(), 0, $amount));
         
         return $this;
     }
@@ -253,7 +256,7 @@ class Cromossomos
             // Transforma objeto em json
             $_needle = json_encode($cromossomo->get());
 
-            // Se objeto ainda não foi lido, guarda objeto na lista de teste e retorno
+            // Se objeto ainda não foi lido, guarda objeto nas listas de teste e retorno
             if (!in_array($_needle, $json_data)) {
                 array_push($real_data, $cromossomo);
                 array_push($json_data, $_needle);
@@ -261,6 +264,26 @@ class Cromossomos
         }
 
         return $real_data;
+    }
+
+    /**
+     * Seleciona apenas os cromossomos válidos da lista atual de cromossomos.
+     * 
+     * @return array
+     */
+    public function valid()
+    {
+        // Lista dos cromossomos válidos
+        $valid = array();
+
+        foreach ($this->get() as $cromossomo)
+        {
+            // Se o cromossomo for válido, adiciona-o a lista
+            if ($cromossomo->is_valid())
+                array_push($valid, $cromossomo);
+        }
+
+        return $valid;
     }
 
     /**

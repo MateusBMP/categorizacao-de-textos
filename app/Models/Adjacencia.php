@@ -77,6 +77,51 @@ class Adjacencia extends MatrizBidimensional
     }
 
     /**
+     * Valida a matriz de adjacência e informa se ela é válida ou não. Passa por todo o regramento 
+     * de limite de linhas, colunas e ligações, onde se exceder em alguma ligação, logo retorna 
+     * falso. O fim da execução sem parada retorna verdadeiro.
+     * 
+     * @return bool
+     */
+    public function is_valid()
+    {
+        $conexoes_por_linha = array();
+        $conexoes_por_coluna = array();
+        $conexoes_matriz = 0;
+
+        for ($i = 0; $i < $this->count(); $i++) {
+            // Constrói o controlador de conexões por linha 
+            if (!isset($conexoes_por_linha[$i]))
+                $conexoes_por_linha[$i] = 0;
+
+            for ($j = 0; $j < $this->count(); $j++) {
+                // Constrói o controlador de conexões por coluna 
+                if (!isset($conexoes_por_coluna[$j]))
+                    $conexoes_por_coluna[$j] = 0;
+
+                // Inicia a verificação se a conexão foi estabelecida
+                if ($this->get()[$i][$j] === 1) {
+                    // limita a duas conexões por linha e uma por coluna e máximo de conexões da 
+                    // matriz a tamanho da matriz - 1. Caso entre mais uma vez na verificação e 
+                    // não passe pelo regramento, reforna false, informando que a matriz é inválida
+                    if ($conexoes_por_linha[$i] < 2 && 
+                        $conexoes_por_coluna[$j] < 1 && 
+                        $conexoes_matriz < ($this->count() - 1))
+                    {
+                        $conexoes_por_linha[$i]++;
+                        $conexoes_por_coluna[$j]++;
+                        $conexoes_matriz++;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        }
+
+        return true;
+    }
+
+    /**
      * Calcula o valor de adaptação da matriz de adjacência, baseada na matriz de similaridade. O
      * cálculo da adaptação equivale à soma dos produtos dos valores da matriz A(i,j) com a matriz
      * S(i,j), sendo A a matriz de adjacência e S a matriz de similaridade.
