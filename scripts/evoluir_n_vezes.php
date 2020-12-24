@@ -6,24 +6,47 @@ use App\Categorizacao;
 use App\Helpers\File;
 use App\Helpers\ProgressBar;
 
+// Arquivos gerados
+$textos_file = "textos.json";
+$ultima_geracao_file = "ultima-geracao.json";
+$geracoes_file = "geracoes.json";
+$melhor_adaptacao_file = "melhor-adaptacao.json";
+
+// Base de dados
 $textos = [
     ["d"],
     ["c", "d"],
     ["a", "d"],
     ["a", "b", "c", "d"]
 ];
-$n_evolucoes = 10;
-$file = "dez-evolucoes.json";
+
+// Número de evoluções
+$n_evolucoes = 100;
+
+echo "Evoluindo {$n_evolucoes} vezes...\n";
+
+// Efetua a evolução e registra o processo com seu tempo restante
 $categorizacao = new Categorizacao($textos);
-
-echo "Evoluindo {$n_evolucoes} vezes...\n\n";
-
 for ($i = 1; $i <= $n_evolucoes; $i++)
 {
     ProgressBar::show_status($i, $n_evolucoes);
     $categorizacao->evoluir();
 }
 
-echo "Gerações salvas em \"{$file}\".\n";
+// Calcula a melhor adaptacao por geracao
+$melhor_adaptacao_por_geracao = array_map(function($c) use ($categorizacao) {
+    return $c[0]->adaptacao($categorizacao->textos->similaridade);
+}, $categorizacao->cromossomos->geracoes);
 
-File::write($file, $categorizacao->cromossomos->geracoes_to_json());
+// Escreve os arquivos
+echo "Base de dados salva em \"{$textos_file}\".\n";
+File::write($textos_file, json_encode(($textos)));
+
+echo "Ultima geração salva em \"{$ultima_geracao_file}\".\n";
+File::write($ultima_geracao_file, $categorizacao->cromossomos->json());
+
+echo "Gerações salvas em \"{$geracoes_file}\".\n";
+File::write($geracoes_file, $categorizacao->cromossomos->geracoes_to_json());
+
+echo "Melhor grau de adaptacao de cada geracao salvo em \"{$melhor_adaptacao_file}\".\n";
+File::write($melhor_adaptacao_file, json_encode($melhor_adaptacao_por_geracao));

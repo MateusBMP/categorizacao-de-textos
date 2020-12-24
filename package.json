@@ -1,0 +1,36 @@
+{
+  "name": "categorizacao-de-textos",
+  "version": "1.0.0",
+  "description": "Categorização de Textos com o Algoritmo Genético de Holland.",
+  "main": "index.js",
+  "dependencies": {
+    "@popperjs/core": "^2.6.0",
+    "bootstrap": "^5.0.0-beta1",
+    "chart.js": "^2.9.4",
+    "chartjs-chart-graph": "^2.2.1",
+    "css-loader": "^5.0.1",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "webpack": "^5.11.0",
+    "sass": "^1.30.0",
+    "sass-loader": "^10.1.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MateusBMP/categorizacao-de-textos.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MateusBMP/categorizacao-de-textos/issues"
+  },
+  "homepage": "https://github.com/MateusBMP/categorizacao-de-textos#readme"
+}

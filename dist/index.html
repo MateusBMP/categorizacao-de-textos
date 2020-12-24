@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorização de textos</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <figure class="text-center mt-3 mb-5">
+                    <blockquote class="blockquote">
+                        <h1>Categorização de textos</h1>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Categorização de Textos com o <cite title="Holland">Algoritmo Genético de Holland</cite>
+                    </figcaption>
+                </figure>
+                <dl class="row">
+                    <dt class="col-sm-3">Executando</dt>
+                    <dd class="col-sm-9">
+                        <p>Para testar esse projeto, primeiro instale as dependências via <a href="https://getcomposer.org/">Composer</a> e <a href="https://www.npmjs.com/">npm</a>:</p>
+                        <p>
+                            <code>
+                                $ composer install
+                                $ npm install
+                            </code>
+                        </p>
+                        <p>Em seguida, rode os scripts para gerar os arquivos para plotagem dos gráficos:</p>
+                        <p><code>$ php scripts/evoluir_n_vezes.php</code></p>
+                        <p>Os arquivos gerados estão em formado <b>JSON</b> e se encontram nos diretórios <code>./scripts/</code> e <code>./dist/files/</code>.</p>
+                        <p>Ao editar aquivos presentes na pasta <code>./src/</code> deve-se executar o <a href="https://webpack.js.org/">webpack</a>:</p>
+                        <p><code>$ npm run build</code></p>
+                        <p>A visualização do projeto encontra-se em <code>./dist/</code> e, portanto, qualquer servidor <b>NGINX</b> ou <b>APACHE2</b> deve direcionar para esta pasta.</p>
+                    </dd>
+                    <dt class="col-sm-3">Colaboradores</dt>
+                    <dd class="col-sm-9">
+                        <ul>
+                            <li>Jadde de Freitas Leite - <a href="https://github.com/Jaddefreitas">GitHub</a></li>
+                            <li>Mateus Barros de Moura Pereira - <a href="https://github.com/MateusBMP">GitHub</a></li>
+                            <li>Roberta Vilhena Vieira Lopes - <a href="http://lattes.cnpq.br/7000283790939630">Lattes</a></li>
+                        </ul>
+                    </dd>
+                </dl>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-sm-8 mb-2">
+                <h4 class="text-center"><b id="numGeracoes"></b> Gerações</h4>
+            </div>
+            <div class="col-sm-8">
+                <canvas id="melhorAdaptacao" width="200" height="60"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5 mb-3">
+        <div class="row justify-content-center">
+            <div class="col-sm-8">
+                <div class="d-flex justify-content-between">
+                    <p class="text-muted">Mateus Pereira</p>
+                    <p><a href="https://github.com/MateusBMP/" class="link-secondary">GitHub</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/app.bundle.js"></script>
+    <script src="./js/index.bundle.js"></script>
+</body>
+</html>

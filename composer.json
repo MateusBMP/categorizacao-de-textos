@@ -2,6 +2,7 @@
     "name": "mateusbmp/categorizacao-de-textos",
     "description": "Categorização de Textos com o Algoritmo Genético de Holland",
     "type": "library",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "MateusBMP",
