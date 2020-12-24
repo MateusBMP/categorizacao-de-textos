@@ -29,6 +29,11 @@ class MatrizBidimensional
         return $this->matriz;
     }
 
+    public function json()
+    {
+        return json_encode($this->get());
+    }
+
     /**
      * Retorna os valores da linha desejada de uma matriz bidimensional.
      * 

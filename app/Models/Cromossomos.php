@@ -80,6 +80,13 @@ class Cromossomos
         return $this->_data;
     }
 
+    public function json()
+    {
+        return json_encode(array_map(function($c) {
+            return $c->get();
+        }, $this->get()));
+    }
+
     public function count()
     {
         return count($this->get());
@@ -103,6 +110,15 @@ class Cromossomos
             throw new \Exception('Setter not allowed for property: ' . $value);
         else 
             return $this->_geracoes;
+    }
+
+    public function geracoes_to_json()
+    {
+        return json_encode(array_map(function($g) {
+            return array_map(function($c) {
+                return $c->get();
+            }, $g);
+        }, $this->geracoes));
     }
 
     /**
