@@ -21,7 +21,7 @@ $textos = [
 ];
 
 // Número de evoluções
-$n_evolucoes = 100;
+$n_evolucoes = 35;
 
 echo "Evoluindo {$n_evolucoes} vezes...\n";
 
