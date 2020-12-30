@@ -6,9 +6,10 @@
   "dependencies": {
     "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1",
-    "chart.js": "^2.9.4",
-    "chartjs-chart-graph": "^2.2.1",
+    "chart.js": "^3.0.0-beta.7",
     "css-loader": "^5.0.1",
+    "d3": "^6.3.1",
+    "d3-force": "^2.1.1",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1",
     "style-loader": "^2.0.0"
@@ -21,6 +22,8 @@
   },
   "scripts": {
     "build": "webpack",
+    "watch": "webpack --watch",
+    "prod": "webpack --env prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
