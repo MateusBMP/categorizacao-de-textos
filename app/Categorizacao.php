@@ -4,8 +4,7 @@ namespace App;
 
 use App\Factories\TextosByCSV;
 use App\Models\Textos;
-use App\Models\Cromossomos;
-use App\Models\Similaridade;
+use App\Categorizacao\Cromossomos;
 use App\Helpers\ObjectHelper;
 
 /**
@@ -109,7 +108,7 @@ class Categorizacao
         $this->cromossomos->handle_mutacao($q_mutacao, $t_mutacao);
         $this->cromossomos->order_by_adaptacao();
         $this->cromossomos->podar($n_cromossomos, $distintos);
-        $this->cromossomos->registrar_geracao();
+        $this->cromossomos->geracoes->registrar(clone $this->cromossomos);
 
         return $this;
     }

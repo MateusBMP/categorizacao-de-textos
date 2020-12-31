@@ -63,22 +63,23 @@ export class Graph
     {
         const links = this.data.links.map(d => Object.create(d));
         const nodes = this.data.nodes.map(d => Object.create(d));
-      
+
         const simulation = d3.forceSimulation(nodes)
             .force("link", d3.forceLink(links).id(d => d.id))
             .force("charge", d3.forceManyBody())
             .force("center", d3.forceCenter(width / 2, height / 2));
       
         const svg = d3.select(selector);
-      
+
         const link = svg.append("g")
             .attr("stroke", "#999")
             .attr("stroke-opacity", 0.6)
             .selectAll("line")
             .data(links)
             .join("line")
-            .attr("stroke-width", d => Math.sqrt(d.value));
-      
+            .attr("stroke-width", d => Math.sqrt(d.value))
+            .attr('marker-end', 'url(#arrow)');
+
         const node = svg.append("g")
             .attr("stroke", "#fff")
             .attr("stroke-width", 1.5)
@@ -88,24 +89,35 @@ export class Graph
             .attr("r", 5)
             .attr("fill", this.color())
             .call(this.drag(simulation));
-      
+
+        const arrow = svg.append('defs')
+            .append('marker')
+            .attr('id', 'arrow')
+            .attr('viewBox', [0, 0, 4, 4])
+            .attr('refX', 10)
+            .attr('refY', 2)
+            .attr('markerWidth', 4)
+            .attr('markerHeight', 4)
+            .attr('orient', 'auto-start-reverse')
+            .append('path')
+            .attr('d', d3.line()([[0, 0], [0, 4], [4, 2]]))
+            .attr('stroke', 'black');
+
         node.append("title")
             .text(d => d.id);
-      
+
         simulation.on("tick", () => {
           link
               .attr("x1", d => d.source.x)
               .attr("y1", d => d.source.y)
               .attr("x2", d => d.target.x)
               .attr("y2", d => d.target.y);
-      
+
           node
               .attr("cx", d => d.x)
               .attr("cy", d => d.y);
         });
-      
-        // invalidation.then(() => simulation.stop());
-      
+
         return svg.node();
     }
 }

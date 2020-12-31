@@ -43,7 +43,7 @@ const setMaisAdaptadoGraph = (data) => {
             for (let i = 1; i <= n; i++) {
                 data.push({
                     id: i, 
-                    group: i
+                    group: 1
                 });
             }
     
@@ -59,7 +59,7 @@ const setMaisAdaptadoGraph = (data) => {
                         links.push({
                             source: (i_lin + 1),
                             target: (i_col + 1),
-                            value: 5
+                            value: 1
                         });
                     }
                 });
@@ -77,6 +77,9 @@ const setMaisAdaptadoGraph = (data) => {
     }
 
     const formatedData = convertGraph(data[0]);
+    const width = $("#maisAdaptado").attr("width");
+    const height = $("#maisAdaptado").attr("height");
+
     let graph = new Graph(formatedData);
-    graph.draw("#maisAdaptado", 600, 600);
+    graph.draw("#maisAdaptado", width, height);
 }

@@ -31,6 +31,9 @@ class TextosByCSV
         // Formata o array de objetos para o formato aceito pelo objeto Textos
         $f_data = self::format_data($data);
 
+        // temp... limitando isso aqui pq não aguentou a memória ram
+        $f_data = array_slice($f_data, 0, 500);
+
         // Retorna o objeto do tipo Textos
         return new Textos($f_data);
     }

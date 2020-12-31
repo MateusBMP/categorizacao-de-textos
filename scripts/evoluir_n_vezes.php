@@ -13,7 +13,8 @@ $geracoes_file = "geracoes.json";
 $melhor_adaptacao_file = "melhor-adaptacao.json";
 
 // Base de dados
-$textos_csv = "acm-computing-classification-system.csv";
+// $textos_csv = "acm-computing-classification-system.csv";
+$textos_csv = "example.csv";
 
 // Número de evoluções
 $n_evolucoes = 35;
@@ -29,9 +30,9 @@ for ($i = 1; $i <= $n_evolucoes; $i++)
 }
 
 // Calcula a melhor adaptacao por geracao
-$melhor_adaptacao_por_geracao = array_map(function($c) use ($categorizacao) {
-    return $c[0]->adaptacao($categorizacao->textos->similaridade);
-}, $categorizacao->cromossomos->geracoes);
+$melhor_adaptacao_por_geracao = array_map(function($cromossomos) use ($categorizacao) {
+    return $cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
+}, $categorizacao->cromossomos->geracoes->get());
 
 // Escreve os arquivos
 echo "Base de dados salva em \"{$textos_file}\".\n";
@@ -41,7 +42,7 @@ echo "Ultima geração salva em \"{$ultima_geracao_file}\".\n";
 File::write("outputs/{$ultima_geracao_file}", $categorizacao->cromossomos->json());
 
 echo "Gerações salvas em \"{$geracoes_file}\".\n";
-File::write("outputs/{$geracoes_file}", $categorizacao->cromossomos->geracoes_to_json());
+File::write("outputs/{$geracoes_file}", $categorizacao->cromossomos->geracoes->json());
 
 echo "Melhor grau de adaptacao de cada geracao salvo em \"{$melhor_adaptacao_file}\".\n";
 File::write("outputs/{$melhor_adaptacao_file}", json_encode($melhor_adaptacao_por_geracao));
