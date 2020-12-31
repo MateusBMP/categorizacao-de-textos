@@ -13,6 +13,21 @@ class File
     ];
 
     /**
+     * Abre um arquivo para leitura apenas. Deve receber o nome do arquivo que será aberto. O
+     * arquivo será buscado, primorodialmente, no diretório privado mas, se desejado, pode-se
+     * buscar pelo diretório público.
+     * 
+     * @param  string $file
+     * @param  string $dir
+     * @return resource|false
+     */
+    public static function open($file, $dir="private")
+    {
+        $fp = fopen(self::$config[$dir].$file, 'r');
+        return $fp;
+    }
+
+    /**
      * Escreve no arquivo. Deve receber qual o nome do arquivo e o que será guardado nele.
      * 
      * @param  string $file

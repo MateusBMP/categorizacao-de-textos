@@ -1,0 +1,2114 @@
+id,title
+1,General and reference
+2,Document types
+3,Surveys and overviews
+4,Reference works
+5,General conference proceedings
+6,Biographies
+7,General literature
+8,"Computing standards, RFCs and guidelines"
+9,Cross-computing tools and techniques
+10,Reliability
+11,Empirical studies
+12,Measurement
+13,Metrics
+14,Evaluation
+15,Experimentation
+16,Estimation
+17,Design
+18,Performance
+19,Validation
+20,Verification
+21,Hardware
+22,Printed circuit boards
+23,Electromagnetic interference and compatibility
+24,PCB design and layout
+25,"Communication hardware, interfaces and storage"
+26,Signal processing systems
+27,Digital signal processing
+28,Beamforming
+29,Noise reduction
+30,Sensors and actuators
+31,Buses and high-speed links
+32,Displays and imagers
+33,External storage
+34,Networking hardware
+35,Printers
+36,Sensor applications and deployments
+37,Sensor devices and platforms
+38,Sound-based input / output
+39,Tactile and hand-based interfaces
+40,Touch screens
+41,Haptic devices
+42,Scanners
+43,Wireless devices
+44,Wireless integrated network sensors
+45,Electro-mechanical devices
+46,Integrated circuits
+47,3D integrated circuits
+48,Interconnect
+49,Input / output circuits
+50,Metallic interconnect
+51,Photonic and optical interconnect
+52,Radio frequency and wireless interconnect
+53,Semiconductor memory
+54,Dynamic memory
+55,Static memory
+56,Non-volatile memory
+57,Read-only memory
+58,Digital switches
+59,Transistors
+60,Logic families
+61,Logic circuits
+62,Arithmetic and datapath circuits
+63,Asynchronous circuits
+64,Combinational circuits
+65,Design modules and hierarchy
+66,Finite state machines
+67,Sequential circuits
+68,Reconfigurable logic and FPGAs
+69,Hardware accelerators
+70,High-speed input / output
+71,Programmable logic elements
+72,Programmable interconnect
+73,Reconfigurable logic applications
+74,Evolvable hardware
+75,Very large scale integration design
+76,3D integrated circuits
+77,Analog and mixed-signal circuits
+78,Data conversion
+79,Clock generation and timing
+80,Analog and mixed-signal circuit optimization
+81,Radio frequency and wireless circuits
+82,Wireline communication
+83,Analog and mixed-signal circuit synthesis
+84,Application-specific VLSI designs
+85,Application specific integrated circuits
+86,Application specific instruction set processors
+87,Application specific processors
+88,Design reuse and communication-based design
+89,Network on chip
+90,System on a chip
+91,Platform-based design
+92,Hard and soft IP
+93,Design rules
+94,Economics of chip design and manufacturing
+95,Full-custom circuits
+96,VLSI design manufacturing considerations
+97,On-chip resource management
+98,On-chip sensors
+99,Standard cell libraries
+100,VLSI packaging
+101,Die and wafer stacking
+102,Input / output styles
+103,Multi-chip modules
+104,Package-level interconnect
+105,VLSI system specification and constraints
+106,Power and energy
+107,Thermal issues
+108,Temperature monitoring
+109,Temperature simulation and estimation
+110,Temperature control
+111,Temperature optimization
+112,Energy generation and storage
+113,Batteries
+114,Fuel-based energy
+115,Renewable energy
+116,Reusable energy storage
+117,Energy distribution
+118,Energy metering
+119,Power conversion
+120,Power networks
+121,Smart grid
+122,Impact on the environment
+123,Power estimation and optimization
+124,Switching devices power issues
+125,Interconnect power issues
+126,Circuits power issues
+127,Chip-level power issues
+128,Platform power issues
+129,Enterprise level and data centers power issues
+130,Electronic design automation
+131,High-level and register-transfer level synthesis
+132,Datapath optimization
+133,Hardware-software codesign
+134,Resource binding and sharing
+135,Operations scheduling
+136,Hardware description languages and compilation
+137,Logic synthesis
+138,Combinational synthesis
+139,Circuit optimization
+140,Sequential synthesis
+141,Technology-mapping
+142,Transistor-level synthesis
+143,Modeling and parameter extraction
+144,Physical design (EDA)
+145,Clock-network synthesis
+146,Packaging
+147,Partitioning and floorplanning
+148,Placement
+149,Physical synthesis
+150,Power grid design
+151,Wire routing
+152,Timing analysis
+153,Electrical-level simulation
+154,Model-order reduction
+155,Compact delay models
+156,Static timing analysis
+157,Statistical timing analysis
+158,Transition-based timing analysis
+159,Methodologies for EDA
+160,Best practices for EDA
+161,Design databases for EDA
+162,Software tools for EDA
+163,Hardware validation
+164,Functional verification
+165,Model checking
+166,Coverage metrics
+167,Equivalence checking
+168,Semi-formal verification
+169,Simulation and emulation
+170,Transaction-level verification
+171,Theorem proving and SAT solving
+172,Assertion checking
+173,Physical verification
+174,Design rule checking
+175,Layout-versus-schematics
+176,Power and thermal analysis
+177,Timing analysis and sign-off
+178,Post-manufacture validation and debug
+179,"Bug detection, localization and diagnosis"
+180,Bug fixing (hardware)
+181,Design for debug
+182,Hardware test
+183,"Analog, mixed-signal and radio frequency test"
+184,Board- and system-level test
+185,Defect-based test
+186,Design for testability
+187,Built-in self-test
+188,Online test and diagnostics
+189,Test data compression
+190,Fault models and test metrics
+191,Memory test and repair
+192,Hardware reliability screening
+193,Test-pattern generation and fault simulation
+194,Testing with distributed and parallel systems
+195,Robustness
+196,Fault tolerance
+197,Error detection and error correction
+198,Failure prediction
+199,"Failure recovery, maintenance and self-repair"
+200,Redundancy
+201,Self-checking mechanisms
+202,System-level fault tolerance
+203,Design for manufacturability
+204,Process variations
+205,Yield and cost modeling
+206,Yield and cost optimization
+207,Hardware reliability
+208,Aging of circuits and systems
+209,Circuit hardening
+210,Early-life failures and infant mortality
+211,"Process, voltage and temperature variations"
+212,Signal integrity and noise analysis
+213,Transient errors and upsets
+214,Safety critical systems
+215,Emerging technologies
+216,Analysis and design of emerging devices and systems
+217,Emerging architectures
+218,Emerging languages and compilers
+219,Emerging simulation
+220,Emerging tools and methodologies
+221,Biology-related information processing
+222,Bio-embedded electronics
+223,Neural systems
+224,Circuit substrates
+225,III-V compounds
+226,Carbon based electronics
+227,Cellular neural networks
+228,Flexible and printable circuits
+229,Superconducting circuits
+230,Electromechanical systems
+231,Microelectromechanical systems
+232,Nanoelectromechanical systems
+233,Emerging interfaces
+234,Memory and dense storage
+235,Emerging optical and photonic technologies
+236,Reversible logic
+237,Plasmonics
+238,Quantum technologies
+239,Single electron devices
+240,Tunneling devices
+241,Quantum computation
+242,Quantum communication and cryptography
+243,Quantum error correction and fault tolerance
+244,Quantum dots and cellular automata
+245,Spintronics and magnetic technologies
+246,Computer systems organization
+247,Architectures
+248,Serial architectures
+249,Reduced instruction set computing
+250,Complex instruction set computing
+251,Superscalar architectures
+252,Pipeline computing
+253,Stack machines
+254,Parallel architectures
+255,Very long instruction word
+256,Interconnection architectures
+257,"Multiple instruction, multiple data"
+258,Cellular architectures
+259,"Multiple instruction, single data"
+260,"Single instruction, multiple data"
+261,Systolic arrays
+262,Multicore architectures
+263,Distributed architectures
+264,Cloud computing
+265,Client-server architectures
+266,n-tier architectures
+267,Peer-to-peer architectures
+268,Grid computing
+269,Other architectures
+270,Neural networks
+271,Reconfigurable computing
+272,Analog computers
+273,Data flow architectures
+274,Heterogeneous (hybrid) systems
+275,Self-organizing autonomic computing
+276,Optical computing
+277,Quantum computing
+278,Molecular computing
+279,High-level language architectures
+280,Special purpose systems
+281,Embedded and cyber-physical systems
+282,Sensor networks
+283,Robotics
+284,Robotic components
+285,Robotic control
+286,Evolutionary robotics
+287,Robotic autonomy
+288,External interfaces for robotics
+289,Sensors and actuators
+290,System on a chip
+291,Embedded systems
+292,Firmware
+293,Embedded hardware
+294,Embedded software
+295,Real-time systems
+296,Real-time operating systems
+297,Real-time languages
+298,Real-time system specification
+299,Real-time system architecture
+300,Dependable and fault-tolerant systems and networks
+301,Reliability
+302,Availability
+303,Maintainability and maintenance
+304,Processors and memory architectures
+305,Secondary storage organization
+306,Redundancy
+307,Fault-tolerant network topologies
+308,Networks
+309,Network architectures
+310,Network design principles
+311,Layering
+312,Naming and addressing
+313,Programming interfaces
+314,Network protocols
+315,Network protocol design
+316,Protocol correctness
+317,Protocol testing and verification
+318,Formal specifications
+319,Link-layer protocols
+320,Network layer protocols
+321,Routing protocols
+322,Signaling protocols
+323,Transport protocols
+324,Session protocols
+325,Presentation protocols
+326,Application layer protocols
+327,Peer-to-peer protocols
+328,OAM protocols
+329,Time synchronization protocols
+330,Network policy
+331,Cross-layer protocols
+332,Network File System (NFS) protocol
+333,Network components
+334,Intermediate nodes
+335,Routers
+336,Bridges and switches
+337,Physical links
+338,Repeaters
+339,Middle boxes / network appliances
+340,End nodes
+341,Network adapters
+342,Network servers
+343,"Wireless access points, base stations and infrastructure"
+344,Cognitive radios
+345,Logical nodes
+346,Network domains
+347,Network algorithms
+348,Data path algorithms
+349,Packet classification
+350,Deep packet inspection
+351,Packet scheduling
+352,Control path algorithms
+353,Network resources allocation
+354,Network control algorithms
+355,Traffic engineering algorithms
+356,Network design and planning algorithms
+357,Network economics
+358,Network performance evaluation
+359,Network performance modeling
+360,Network simulations
+361,Network experimentation
+362,Network performance analysis
+363,Network measurement
+364,Network properties
+365,Network security
+366,Security protocols
+367,Web protocol security
+368,Mobile and wireless security
+369,Denial-of-service attacks
+370,Firewalls
+371,Network range
+372,Short-range networks
+373,Local area networks
+374,Metropolitan area networks
+375,Wide area networks
+376,Very long-range networks
+377,Network structure
+378,Topology analysis and generation
+379,Physical topologies
+380,Logical / virtual topologies
+381,Network topology types
+382,Point-to-point networks
+383,Bus networks
+384,Star networks
+385,Ring networks
+386,Token ring networks
+387,Fiber distributed data interface (FDDI)
+388,Mesh networks
+389,Wireless mesh networks
+390,Hybrid networks
+391,Network dynamics
+392,Network reliability
+393,Error detection and error correction
+394,Network mobility
+395,Network manageability
+396,Network privacy and anonymity
+397,Network services
+398,Naming and addressing
+399,Cloud computing
+400,Location based services
+401,Programmable networks
+402,In-network processing
+403,Network management
+404,Network monitoring
+405,Network types
+406,Network on chip
+407,Home networks
+408,Storage area networks
+409,Data center networks
+410,Wired access networks
+411,Cyber-physical networks
+412,Sensor networks
+413,Mobile networks
+414,Overlay and other logical network structures
+415,Peer-to-peer networks
+416,World Wide Web (network structure)
+417,Social media networks
+418,Online social networks
+419,Wireless access networks
+420,Wireless local area networks
+421,Wireless personal area networks
+422,Ad hoc networks
+423,Mobile ad hoc networks
+424,Public Internet
+425,Packet-switching networks
+426,Software and its engineering
+427,Software organization and properties
+428,Contextual software domains
+429,E-commerce infrastructure
+430,Software infrastructure
+431,Interpreters
+432,Middleware
+433,Message oriented middleware
+434,Reflective middleware
+435,Embedded middleware
+436,Virtual machines
+437,Operating systems
+438,File systems management
+439,Memory management
+440,Virtual memory
+441,Main memory
+442,Allocation / deallocation strategies
+443,Garbage collection
+444,Distributed memory
+445,Secondary storage
+446,Process management
+447,Scheduling
+448,Deadlocks
+449,Multithreading
+450,Multiprocessing / multiprogramming / multitasking
+451,Monitors
+452,Mutual exclusion
+453,Concurrency control
+454,Power management
+455,Process synchronization
+456,Communications management
+457,Buffering
+458,Input / output
+459,Message passing
+460,Virtual worlds software
+461,Interactive games
+462,Virtual worlds training simulations
+463,Software system structures
+464,Embedded software
+465,Software architectures
+466,n-tier architectures
+467,Peer-to-peer architectures
+468,Data flow architectures
+469,Cooperating communicating processes
+470,Layered systems
+471,Publish-subscribe / event-based architectures
+472,Electronic blackboards
+473,Simulator / interpreter
+474,Object oriented architectures
+475,Tightly coupled architectures
+476,Space-based architectures
+477,3-tier architectures
+478,Software system models
+479,Petri nets
+480,State systems
+481,Entity relationship modeling
+482,Model-driven software engineering
+483,Feature interaction
+484,Massively parallel systems
+485,Ultra-large-scale systems
+486,Distributed systems organizing principles
+487,Cloud computing
+488,Client-server architectures
+489,Grid computing
+490,Organizing principles for web applications
+491,Real-time systems software
+492,"Abstraction, modeling and modularity"
+493,Software functional properties
+494,Correctness
+495,Synchronization
+496,Functionality
+497,Real-time schedulability
+498,Consistency
+499,Completeness
+500,Access protection
+501,Formal methods
+502,Model checking
+503,Software verification
+504,Automated static analysis
+505,Dynamic analysis
+506,Extra-functional properties
+507,Interoperability
+508,Software performance
+509,Software reliability
+510,Software fault tolerance
+511,Checkpoint / restart
+512,Software safety
+513,Software usability
+514,Software notations and tools
+515,General programming languages
+516,Language types
+517,Parallel programming languages
+518,Distributed programming languages
+519,Imperative languages
+520,Object oriented languages
+521,Functional languages
+522,Concurrent programming languages
+523,Constraint and logic languages
+524,Data flow languages
+525,Extensible languages
+526,Assembly languages
+527,Multiparadigm languages
+528,Very high level languages
+529,Language features
+530,Abstract data types
+531,Polymorphism
+532,Inheritance
+533,Control structures
+534,Data types and structures
+535,Classes and objects
+536,Modules / packages
+537,Constraints
+538,Recursion
+539,Concurrent programming structures
+540,"Procedures, functions and subroutines"
+541,Patterns
+542,Coroutines
+543,Frameworks
+544,Formal language definitions
+545,Syntax
+546,Semantics
+547,Compilers
+548,Interpreters
+549,Incremental compilers
+550,Retargetable compilers
+551,Just-in-time compilers
+552,Dynamic compilers
+553,Translator writing systems and compiler generators
+554,Source code generation
+555,Runtime environments
+556,Preprocessors
+557,Parsers
+558,Context specific languages
+559,Markup languages
+560,Extensible Markup Language (XML)
+561,Hypertext languages
+562,Scripting languages
+563,Domain specific languages
+564,Specialized application languages
+565,API languages
+566,Graphical user interface languages
+567,Window managers
+568,Command and control languages
+569,Macro languages
+570,Programming by example
+571,State based definitions
+572,Visual languages
+573,Interface definition languages
+574,System description languages
+575,Design languages
+576,Unified Modeling Language (UML)
+577,Architecture description languages
+578,System modeling languages
+579,Orchestration languages
+580,Integration frameworks
+581,Specification languages
+582,Development frameworks and environments
+583,Object oriented frameworks
+584,Software as a service orchestration system
+585,Integrated and visual development environments
+586,Application specific development environments
+587,Software configuration management and version control systems
+588,Software libraries and repositories
+589,Software maintenance tools
+590,Software creation and management
+591,Designing software
+592,Requirements analysis
+593,Software design engineering
+594,Software design tradeoffs
+595,Software implementation planning
+596,Software design techniques
+597,Software development process management
+598,Software development methods
+599,Rapid application development
+600,Agile software development
+601,Capability Maturity Model
+602,Waterfall model
+603,Spiral model
+604,V-model
+605,Design patterns
+606,Risk management
+607,Software development techniques
+608,Software prototyping
+609,Object oriented development
+610,Flowcharts
+611,Reusability
+612,Software product lines
+613,Error handling and recovery
+614,Automatic programming
+615,Genetic programming
+616,Software verification and validation
+617,Software prototyping
+618,Operational analysis
+619,Software defect analysis
+620,Software testing and debugging
+621,Fault tree analysis
+622,Process validation
+623,Walkthroughs
+624,Pair programming
+625,Use cases
+626,Acceptance testing
+627,Traceability
+628,Formal software verification
+629,Empirical software validation
+630,Software post-development issues
+631,Software reverse engineering
+632,Documentation
+633,Backup procedures
+634,Software evolution
+635,Software version control
+636,Maintaining software
+637,System administration
+638,Collaboration in software development
+639,Open source model
+640,Programming teams
+641,Search-based software engineering
+642,Theory of computation
+643,Models of computation
+644,Computability
+645,Lambda calculus
+646,Turing machines
+647,Recursive functions
+648,Probabilistic computation
+649,Quantum computation theory
+650,Quantum complexity theory
+651,Quantum communication complexity
+652,Quantum query complexity
+653,Quantum information theory
+654,Interactive computation
+655,Streaming models
+656,Concurrency
+657,Parallel computing models
+658,Distributed computing models
+659,Process calculi
+660,Timed and hybrid models
+661,Abstract machines
+662,Formal languages and automata theory
+663,Formalisms
+664,Algebraic language theory
+665,Rewrite systems
+666,Automata over infinite objects
+667,Grammars and context-free languages
+668,Tree languages
+669,Automata extensions
+670,Transducers
+671,Quantitative automata
+672,Regular languages
+673,Computational complexity and cryptography
+674,Complexity classes
+675,"Problems, reductions and completeness"
+676,Communication complexity
+677,Circuit complexity
+678,Oracles and decision trees
+679,Algebraic complexity theory
+680,Quantum complexity theory
+681,Proof complexity
+682,Interactive proof systems
+683,Complexity theory and logic
+684,Cryptographic primitives
+685,Cryptographic protocols
+686,Logic
+687,Logic and verification
+688,Proof theory
+689,Modal and temporal logics
+690,Automated reasoning
+691,Constraint and logic programming
+692,Constructive mathematics
+693,Description logics
+694,Equational logic and rewriting
+695,Finite Model Theory
+696,Higher order logic
+697,Linear logic
+698,Programming logic
+699,Abstraction
+700,Verification by model checking
+701,Type theory
+702,Hoare logic
+703,Separation logic
+704,Design and analysis of algorithms
+705,Graph algorithms analysis
+706,Network flows
+707,Sparsification and spanners
+708,Shortest paths
+709,Dynamic graph algorithms
+710,Approximation algorithms analysis
+711,Scheduling algorithms
+712,Packing and covering problems
+713,Routing and network design problems
+714,Facility location and clustering
+715,Rounding techniques
+716,Stochastic approximation
+717,Numeric approximation algorithms
+718,Mathematical optimization
+719,Discrete optimization
+720,Network optimization
+721,Optimization with randomized search heuristics
+722,Simulated annealing
+723,Evolutionary algorithms
+724,Tabu search
+725,Randomized local search
+726,Continuous optimization
+727,Linear programming
+728,Semidefinite programming
+729,Convex optimization
+730,Quasiconvex programming and unimodality
+731,Stochastic control and optimization
+732,Quadratic programming
+733,Nonconvex optimization
+734,Bio-inspired optimization
+735,Mixed discrete-continuous optimization
+736,Submodular optimization and polymatroids
+737,Integer programming
+738,Bio-inspired optimization
+739,Non-parametric optimization
+740,Genetic programming
+741,Developmental representations
+742,Data structures design and analysis
+743,Data compression
+744,Pattern matching
+745,Sorting and searching
+746,Predecessor queries
+747,Cell probe models and lower bounds
+748,Online algorithms
+749,Online learning algorithms
+750,Scheduling algorithms
+751,Caching and paging algorithms
+752,K-server algorithms
+753,Adversary models
+754,Parameterized complexity and exact algorithms
+755,Fixed parameter tractability
+756,W hierarchy
+757,"Streaming, sublinear and near linear time algorithms"
+758,Bloom filters and hashing
+759,Sketching and sampling
+760,Lower bounds and information complexity
+761,Random order and robust communication complexity
+762,Nearest neighbor algorithms
+763,Parallel algorithms
+764,MapReduce algorithms
+765,Self-organization
+766,Shared memory algorithms
+767,Vector / streaming algorithms
+768,Massively parallel algorithms
+769,Distributed algorithms
+770,MapReduce algorithms
+771,Self-organization
+772,Algorithm design techniques
+773,Backtracking
+774,Branch-and-bound
+775,Divide and conquer
+776,Dynamic programming
+777,Preconditioning
+778,Concurrent algorithms
+779,"Randomness, geometry and discrete structures"
+780,Pseudorandomness and derandomization
+781,Computational geometry
+782,Generating random combinatorial structures
+783,Random walks and Markov chains
+784,Expander graphs and randomness extractors
+785,Error-correcting codes
+786,Random projections and metric embeddings
+787,Random network models
+788,Random search heuristics
+789,Theory and algorithms for application domains
+790,Machine learning theory
+791,Sample complexity and generalization bounds
+792,Boolean function learning
+793,Unsupervised learning and clustering
+794,Kernel methods
+795,Support vector machines
+796,Gaussian processes
+797,Boosting
+798,Bayesian analysis
+799,Inductive inference
+800,Online learning theory
+801,Multi-agent learning
+802,Models of learning
+803,Query learning
+804,Structured prediction
+805,Reinforcement learning
+806,Sequential decision making
+807,Inverse reinforcement learning
+808,Apprenticeship learning
+809,Multi-agent reinforcement learning
+810,Adversarial learning
+811,Active learning
+812,Semi-supervised learning
+813,Markov decision processes
+814,Regret bounds
+815,Algorithmic game theory and mechanism design
+816,Social networks
+817,Algorithmic game theory
+818,Algorithmic mechanism design
+819,Solution concepts in game theory
+820,Exact and approximate computation of equilibria
+821,Quality of equilibria
+822,Convergence and learning in games
+823,Market equilibria
+824,Computational pricing and auctions
+825,Representations of games and their complexity
+826,Network games
+827,Network formation
+828,Computational advertising theory
+829,Database theory
+830,Data exchange
+831,Data provenance
+832,Data modeling
+833,Database query languages (principles)
+834,Database constraints theory
+835,Database interoperability
+836,Data structures and algorithms for data management
+837,Database query processing and optimization (theory)
+838,Data integration
+839,Logic and databases
+840,Theory of database privacy and security
+841,"Incomplete, inconsistent, and uncertain databases"
+842,Theory of randomized search heuristics
+843,Semantics and reasoning
+844,Program constructs
+845,Control primitives
+846,Functional constructs
+847,Object oriented constructs
+848,Program schemes
+849,Type structures
+850,Program semantics
+851,Algebraic semantics
+852,Denotational semantics
+853,Operational semantics
+854,Axiomatic semantics
+855,Action semantics
+856,Categorical semantics
+857,Program reasoning
+858,Invariants
+859,Program specifications
+860,Pre- and post-conditions
+861,Program verification
+862,Program analysis
+863,Assertions
+864,Parsing
+865,Abstraction
+866,Mathematics of computing
+867,Discrete mathematics
+868,Combinatorics
+869,Combinatoric problems
+870,Permutations and combinations
+871,Combinatorial algorithms
+872,Generating functions
+873,Combinatorial optimization
+874,Combinatorics on words
+875,Enumeration
+876,Graph theory
+877,Trees
+878,Hypergraphs
+879,Random graphs
+880,Graph coloring
+881,Paths and connectivity problems
+882,Graph enumeration
+883,Matchings and factors
+884,Graphs and surfaces
+885,Network flows
+886,Spectra of graphs
+887,Extremal graph theory
+888,Matroids and greedoids
+889,Graph algorithms
+890,Approximation algorithms
+891,Probability and statistics
+892,Probabilistic representations
+893,Bayesian networks
+894,Markov networks
+895,Factor graphs
+896,Decision diagrams
+897,Equational models
+898,Causal networks
+899,Stochastic differential equations
+900,Nonparametric representations
+901,Kernel density estimators
+902,Spline models
+903,Bayesian nonparametric models
+904,Probabilistic inference problems
+905,Maximum likelihood estimation
+906,Bayesian computation
+907,Computing most probable explanation
+908,Hypothesis testing and confidence interval computation
+909,Density estimation
+910,Quantile regression
+911,Max marginal computation
+912,Probabilistic reasoning algorithms
+913,Variable elimination
+914,Loopy belief propagation
+915,Variational methods
+916,Expectation maximization
+917,Markov-chain Monte Carlo methods
+918,Gibbs sampling
+919,Metropolis-Hastings algorithm
+920,Simulated annealing
+921,Markov-chain Monte Carlo convergence measures
+922,Sequential Monte Carlo methods
+923,Kalman filters and hidden Markov models
+924,Resampling methods
+925,Bootstrapping
+926,Jackknifing
+927,Random number generation
+928,Probabilistic algorithms
+929,Statistical paradigms
+930,Queueing theory
+931,Contingency table analysis
+932,Regression analysis
+933,Robust regression
+934,Time series analysis
+935,Survival analysis
+936,Renewal theory
+937,Dimensionality reduction
+938,Cluster analysis
+939,Statistical graphics
+940,Exploratory data analysis
+941,Stochastic processes
+942,Markov processes
+943,Nonparametric statistics
+944,Distribution functions
+945,Multivariate statistics
+946,Mathematical software
+947,Solvers
+948,Statistical software
+949,Mathematical software performance
+950,Information theory
+951,Coding theory
+952,Mathematical analysis
+953,Numerical analysis
+954,Computation of transforms
+955,Computations in finite fields
+956,Computations on matrices
+957,Computations on polynomials
+958,Gröbner bases and other special bases
+959,Number-theoretic computations
+960,Interpolation
+961,Numerical differentiation
+962,Interval arithmetic
+963,Arbitrary-precision arithmetic
+964,Automatic differentiation
+965,Mesh generation
+966,Discretization
+967,Mathematical optimization
+968,Discrete optimization
+969,Network optimization
+970,Optimization with randomized search heuristics
+971,Simulated annealing
+972,Evolutionary algorithms
+973,Tabu search
+974,Randomized local search
+975,Continuous optimization
+976,Linear programming
+977,Semidefinite programming
+978,Convex optimization
+979,Quasiconvex programming and unimodality
+980,Stochastic control and optimization
+981,Quadratic programming
+982,Nonconvex optimization
+983,Bio-inspired optimization
+984,Mixed discrete-continuous optimization
+985,Submodular optimization and polymatroids
+986,Integer programming
+987,Bio-inspired optimization
+988,Non-parametric optimization
+989,Genetic programming
+990,Developmental representations
+991,Differential equations
+992,Ordinary differential equations
+993,Partial differential equations
+994,Differential algebraic equations
+995,Differential variational inequalities
+996,Calculus
+997,Lambda calculus
+998,Differential calculus
+999,Integral calculus
+1000,Functional analysis
+1001,Approximation
+1002,Integral equations
+1003,Nonlinear equations
+1004,Quadrature
+1005,Continuous mathematics
+1006,Calculus
+1007,Lambda calculus
+1008,Differential calculus
+1009,Integral calculus
+1010,Topology
+1011,Point-set topology
+1012,Algebraic topology
+1013,Geometric topology
+1014,Continuous functions
+1015,Information systems
+1016,Data management systems
+1017,Database design and models
+1018,Relational database model
+1019,Entity relationship models
+1020,Graph-based database models
+1021,Hierarchical data models
+1022,Network data models
+1023,Physical data models
+1024,Data model extensions
+1025,Semi-structured data
+1026,Data streams
+1027,Data provenance
+1028,Incomplete data
+1029,Temporal data
+1030,Uncertainty
+1031,Inconsistent data
+1032,Data structures
+1033,Data access methods
+1034,Multidimensional range search
+1035,Data scans
+1036,Point lookups
+1037,Unidimensional range search
+1038,Proximity search
+1039,Data layout
+1040,Data compression
+1041,Data encryption
+1042,Record and block layout
+1043,Database management system engines
+1044,DBMS engine architectures
+1045,Database query processing
+1046,Query optimization
+1047,Query operators
+1048,Query planning
+1049,Join algorithms
+1050,Database transaction processing
+1051,Data locking
+1052,Transaction logging
+1053,Database recovery
+1054,Record and buffer management
+1055,Parallel and distributed DBMSs
+1056,Key-value stores
+1057,MapReduce-based systems
+1058,Relational parallel and distributed DBMSs
+1059,Triggers and rules
+1060,Database views
+1061,Integrity checking
+1062,Distributed database transactions
+1063,Distributed data locking
+1064,Deadlocks
+1065,Distributed database recovery
+1066,Main memory engines
+1067,Online analytical processing engines
+1068,Stream management
+1069,Query languages
+1070,Relational database query languages
+1071,Structured Query Language
+1072,XML query languages
+1073,XPath
+1074,XQuery
+1075,Query languages for non-relational engines
+1076,MapReduce languages
+1077,Call level interfaces
+1078,Database administration
+1079,Database utilities and tools
+1080,Database performance evaluation
+1081,Autonomous database administration
+1082,Data dictionaries
+1083,Information integration
+1084,Deduplication
+1085,"Extraction, transformation and loading"
+1086,Data exchange
+1087,Data cleaning
+1088,Wrappers (data mining)
+1089,Mediators and data integration
+1090,Entity resolution
+1091,Data warehouses
+1092,Federated databases
+1093,Middleware for databases
+1094,Database web servers
+1095,Application servers
+1096,Object-relational mapping facilities
+1097,Data federation tools
+1098,Data replication tools
+1099,Distributed transaction monitors
+1100,Message queues
+1101,Service buses
+1102,Enterprise application integration tools
+1103,Middleware business process managers
+1104,Information storage systems
+1105,Information storage technologies
+1106,Magnetic disks
+1107,Magnetic tapes
+1108,Optical / magneto-optical disks
+1109,Storage class memory
+1110,Flash memory
+1111,Phase change memory
+1112,Disk arrays
+1113,Tape libraries
+1114,Record storage systems
+1115,Record storage alternatives
+1116,Heap (data structure)
+1117,Hashed file organization
+1118,Indexed file organization
+1119,Linked lists
+1120,Directory structures
+1121,B-trees
+1122,Vnodes
+1123,Inodes
+1124,Extent-based file structures
+1125,Block / page strategies
+1126,Slotted pages
+1127,Intrapage space management
+1128,Interpage free-space management
+1129,Record layout alternatives
+1130,Fixed length attributes
+1131,Variable length attributes
+1132,Null values in records
+1133,Relational storage
+1134,Horizontal partitioning
+1135,Vertical partitioning
+1136,Column based storage
+1137,Hybrid storage layouts
+1138,Compression strategies
+1139,Storage replication
+1140,Mirroring
+1141,RAID
+1142,Point-in-time copies
+1143,Remote replication
+1144,Storage recovery strategies
+1145,Storage architectures
+1146,Cloud based storage
+1147,Storage network architectures
+1148,Storage area networks
+1149,Direct attached storage
+1150,Network attached storage
+1151,Distributed storage
+1152,Storage management
+1153,Hierarchical storage management
+1154,Storage virtualization
+1155,Information lifecycle management
+1156,Version management
+1157,Storage power management
+1158,Thin provisioning
+1159,Information systems applications
+1160,Enterprise information systems
+1161,Intranets
+1162,Extranets
+1163,Enterprise resource planning
+1164,Enterprise applications
+1165,Data centers
+1166,Collaborative and social computing systems and tools
+1167,Blogs
+1168,Wikis
+1169,Reputation systems
+1170,Open source software
+1171,Social networking sites
+1172,Social tagging systems
+1173,Synchronous editors
+1174,Asynchronous editors
+1175,Spatial-temporal systems
+1176,Location based services
+1177,Geographic information systems
+1178,Sensor networks
+1179,Data streaming
+1180,Global positioning systems
+1181,Decision support systems
+1182,Data warehouses
+1183,Expert systems
+1184,Data analytics
+1185,Online analytical processing
+1186,Mobile information processing systems
+1187,Process control systems
+1188,Multimedia information systems
+1189,Multimedia databases
+1190,Multimedia streaming
+1191,Multimedia content creation
+1192,Massively multiplayer online games
+1193,Data mining
+1194,Data cleaning
+1195,Collaborative filtering
+1196,Association rules
+1197,Clustering
+1198,Nearest-neighbor search
+1199,Data stream mining
+1200,Digital libraries and archives
+1201,Computational advertising
+1202,Computing platforms
+1203,World Wide Web
+1204,Web searching and information discovery
+1205,Web search engines
+1206,Web crawling
+1207,Web indexing
+1208,Page and site ranking
+1209,Spam detection
+1210,Content ranking
+1211,Collaborative filtering
+1212,Social recommendation
+1213,Personalization
+1214,Social tagging
+1215,Online advertising
+1216,Sponsored search advertising
+1217,Content match advertising
+1218,Display advertising
+1219,Social advertising
+1220,Web mining
+1221,Site wrapping
+1222,Data extraction and integration
+1223,Deep web
+1224,Surfacing
+1225,Search results deduplication
+1226,Web log analysis
+1227,Traffic analysis
+1228,Web applications
+1229,Internet communications tools
+1230,Email
+1231,Blogs
+1232,Texting
+1233,Chat
+1234,Web conferencing
+1235,Social networks
+1236,Crowdsourcing
+1237,Answer ranking
+1238,Trust
+1239,Incentive schemes
+1240,Reputation systems
+1241,Electronic commerce
+1242,Digital cash
+1243,E-commerce infrastructure
+1244,Electronic data interchange
+1245,Electronic funds transfer
+1246,Online shopping
+1247,Online banking
+1248,Secure online transactions
+1249,Online auctions
+1250,Web interfaces
+1251,Wikis
+1252,Browsers
+1253,Mashups
+1254,Web services
+1255,Simple Object Access Protocol (SOAP)
+1256,RESTful web services
+1257,Web Services Description Language (WSDL)
+1258,Universal Description Discovery and Integration (UDDI)
+1259,Service discovery and interfaces
+1260,Web data description languages
+1261,Semantic web description languages
+1262,Resource Description Framework (RDF)
+1263,Web Ontology Language (OWL)
+1264,Markup languages
+1265,Extensible Markup Language (XML)
+1266,Hypertext languages
+1267,Information retrieval
+1268,Document representation
+1269,Document structure
+1270,Document topic models
+1271,Content analysis and feature selection
+1272,Data encoding and canonicalization
+1273,Document collection models
+1274,Ontologies
+1275,Dictionaries
+1276,Thesauri
+1277,Information retrieval query processing
+1278,Query representation
+1279,Query intent
+1280,Query log analysis
+1281,Query suggestion
+1282,Query reformulation
+1283,Users and interactive retrieval
+1284,Personalization
+1285,Task models
+1286,Search interfaces
+1287,Collaborative search
+1288,Retrieval models and ranking
+1289,Rank aggregation
+1290,Probabilistic retrieval models
+1291,Language models
+1292,Similarity measures
+1293,Learning to rank
+1294,"Combination, fusion and federated search"
+1295,Information retrieval diversity
+1296,Top-k retrieval in databases
+1297,Novelty in information retrieval
+1298,Retrieval tasks and goals
+1299,Question answering
+1300,Document filtering
+1301,Recommender systems
+1302,Information extraction
+1303,Sentiment analysis
+1304,Expert search
+1305,Near-duplicate and plagiarism detection
+1306,Clustering and classification
+1307,Summarization
+1308,Business intelligence
+1309,Evaluation of retrieval results
+1310,Test collections
+1311,Relevance assessment
+1312,Retrieval effectiveness
+1313,Retrieval efficiency
+1314,Presentation of retrieval results
+1315,Search engine architectures and scalability
+1316,Search engine indexing
+1317,Search index compression
+1318,Distributed retrieval
+1319,Peer-to-peer retrieval
+1320,Retrieval on mobile devices
+1321,Adversarial retrieval
+1322,Link and co-citation analysis
+1323,Searching with auxiliary databases
+1324,Specialized information retrieval
+1325,Structure and multilingual text search
+1326,Structured text search
+1327,Mathematics retrieval
+1328,Chemical and biochemical retrieval
+1329,Multilingual and cross-lingual retrieval
+1330,Multimedia and multimodal retrieval
+1331,Image search
+1332,Video search
+1333,Speech / audio search
+1334,Music retrieval
+1335,Environment-specific retrieval
+1336,Enterprise search
+1337,Desktop search
+1338,Web and social media search
+1339,Security and privacy
+1340,Cryptography
+1341,Key management
+1342,Public key (asymmetric) techniques
+1343,Digital signatures
+1344,Public key encryption
+1345,Symmetric cryptography and hash functions
+1346,Block and stream ciphers
+1347,Hash functions and message authentication codes
+1348,Cryptanalysis and other attacks
+1349,Information-theoretic techniques
+1350,Mathematical foundations of cryptography
+1351,Formal methods and theory of security
+1352,Trust frameworks
+1353,Security requirements
+1354,Formal security models
+1355,Logic and verification
+1356,Security services
+1357,Authentication
+1358,Biometrics
+1359,Graphical / visual passwords
+1360,Multi-factor authentication
+1361,Access control
+1362,"Pseudonymity, anonymity and untraceability"
+1363,Privacy-preserving protocols
+1364,Digital rights management
+1365,Authorization
+1366,Intrusion/anomaly detection and malware mitigation
+1367,Malware and its mitigation
+1368,Intrusion detection systems
+1369,Artificial immune systems
+1370,Social engineering attacks
+1371,Spoofing attacks
+1372,Phishing
+1373,Security in hardware
+1374,Tamper-proof and tamper-resistant designs
+1375,Embedded systems security
+1376,Hardware security implementation
+1377,Hardware-based security protocols
+1378,Hardware attacks and countermeasures
+1379,Malicious design modifications
+1380,Side-channel analysis and countermeasures
+1381,Hardware reverse engineering
+1382,Systems security
+1383,Operating systems security
+1384,Mobile platform security
+1385,Trusted computing
+1386,Virtualization and security
+1387,Browser security
+1388,Distributed systems security
+1389,Information flow control
+1390,Denial-of-service attacks
+1391,Firewalls
+1392,Vulnerability management
+1393,Penetration testing
+1394,Vulnerability scanners
+1395,File system security
+1396,Network security
+1397,Security protocols
+1398,Web protocol security
+1399,Mobile and wireless security
+1400,Denial-of-service attacks
+1401,Firewalls
+1402,Database and storage security
+1403,Data anonymization and sanitization
+1404,Management and querying of encrypted data
+1405,Information accountability and usage control
+1406,Database activity monitoring
+1407,Software and application security
+1408,Software security engineering
+1409,Web application security
+1410,Social network security and privacy
+1411,Domain-specific security and privacy architectures
+1412,Software reverse engineering
+1413,Human and societal aspects of security and privacy
+1414,Economics of security and privacy
+1415,Social aspects of security and privacy
+1416,Privacy protections
+1417,Usability in security and privacy
+1418,Human-centered computing
+1419,Human computer interaction (HCI)
+1420,HCI design and evaluation methods
+1421,User models
+1422,User studies
+1423,Usability testing
+1424,Heuristic evaluations
+1425,Walkthrough evaluations
+1426,Laboratory experiments
+1427,Field studies
+1428,Interaction paradigms
+1429,Hypertext / hypermedia
+1430,Mixed / augmented reality
+1431,Command line interfaces
+1432,Graphical user interfaces
+1433,Virtual reality
+1434,Web-based interaction
+1435,Natural language interfaces
+1436,Collaborative interaction
+1437,Interaction devices
+1438,Graphics input devices
+1439,Displays and imagers
+1440,Sound-based input / output
+1441,Keyboards
+1442,Pointing devices
+1443,Touch screens
+1444,Haptic devices
+1445,"HCI theory, concepts and models"
+1446,Interaction techniques
+1447,Auditory feedback
+1448,Text input
+1449,Pointing
+1450,Gestural input
+1451,Interactive systems and tools
+1452,User interface management systems
+1453,User interface programming
+1454,User interface toolkits
+1455,Empirical studies in HCI
+1456,Interaction design
+1457,Interaction design process and methods
+1458,User interface design
+1459,User centered design
+1460,Activity centered design
+1461,Scenario-based design
+1462,Participatory design
+1463,Contextual design
+1464,Interface design prototyping
+1465,"Interaction design theory, concepts and paradigms"
+1466,Empirical studies in interaction design
+1467,Systems and tools for interaction design
+1468,Wireframes
+1469,Collaborative and social computing
+1470,"Collaborative and social computing theory, concepts and paradigms"
+1471,Social content sharing
+1472,Collaborative content creation
+1473,Collaborative filtering
+1474,Social recommendation
+1475,Social networks
+1476,Social tagging
+1477,Computer supported cooperative work
+1478,Social engineering (social sciences)
+1479,Social navigation
+1480,Social media
+1481,Collaborative and social computing design and evaluation methods
+1482,Social network analysis
+1483,Ethnographic studies
+1484,Collaborative and social computing systems and tools
+1485,Blogs
+1486,Wikis
+1487,Reputation systems
+1488,Open source software
+1489,Social networking sites
+1490,Social tagging systems
+1491,Synchronous editors
+1492,Asynchronous editors
+1493,Empirical studies in collaborative and social computing
+1494,Collaborative and social computing devices
+1495,Ubiquitous and mobile computing
+1496,"Ubiquitous and mobile computing theory, concepts and paradigms"
+1497,Ubiquitous computing
+1498,Mobile computing
+1499,Ambient intelligence
+1500,Ubiquitous and mobile computing systems and tools
+1501,Ubiquitous and mobile devices
+1502,Smartphones
+1503,Interactive whiteboards
+1504,Mobile phones
+1505,Mobile devices
+1506,Portable media players
+1507,Personal digital assistants
+1508,Handheld game consoles
+1509,E-book readers
+1510,Tablet computers
+1511,Ubiquitous and mobile computing design and evaluation methods
+1512,Empirical studies in ubiquitous and mobile computing
+1513,Visualization
+1514,Visualization techniques
+1515,Treemaps
+1516,Hyperbolic trees
+1517,Heat maps
+1518,Graph drawings
+1519,Dendrograms
+1520,Cladograms
+1521,Visualization application domains
+1522,Scientific visualization
+1523,Visual analytics
+1524,Geographic visualization
+1525,Information visualization
+1526,Visualization systems and tools
+1527,Visualization toolkits
+1528,"Visualization theory, concepts and paradigms"
+1529,Empirical studies in visualization
+1530,Visualization design and evaluation methods
+1531,Accessibility
+1532,"Accessibility theory, concepts and paradigms"
+1533,Empirical studies in accessibility
+1534,Accessibility design and evaluation methods
+1535,Accessibility technologies
+1536,Accessibility systems and tools
+1537,Computing methodologies
+1538,Symbolic and algebraic manipulation
+1539,Symbolic and algebraic algorithms
+1540,Combinatorial algorithms
+1541,Algebraic algorithms
+1542,Nonalgebraic algorithms
+1543,Symbolic calculus algorithms
+1544,Exact arithmetic algorithms
+1545,Hybrid symbolic-numeric methods
+1546,Discrete calculus algorithms
+1547,Number theory algorithms
+1548,Equation and inequality solving algorithms
+1549,Linear algebra algorithms
+1550,Theorem proving algorithms
+1551,Boolean algebra algorithms
+1552,Optimization algorithms
+1553,Computer algebra systems
+1554,Special-purpose algebraic systems
+1555,Representation of mathematical objects
+1556,Representation of exact numbers
+1557,Representation of mathematical functions
+1558,Representation of Boolean functions
+1559,Representation of polynomials
+1560,Parallel computing methodologies
+1561,Parallel algorithms
+1562,MapReduce algorithms
+1563,Self-organization
+1564,Shared memory algorithms
+1565,Vector / streaming algorithms
+1566,Massively parallel algorithms
+1567,Parallel programming languages
+1568,Artificial intelligence
+1569,Natural language processing
+1570,Information extraction
+1571,Machine translation
+1572,"Discourse, dialogue and pragmatics"
+1573,Natural language generation
+1574,Speech recognition
+1575,Lexical semantics
+1576,Phonology / morphology
+1577,Language resources
+1578,Knowledge representation and reasoning
+1579,Description logics
+1580,Semantic networks
+1581,"Nonmonotonic, default reasoning and belief revision"
+1582,Probabilistic reasoning
+1583,Vagueness and fuzzy logic
+1584,Causal reasoning and diagnostics
+1585,Temporal reasoning
+1586,Cognitive robotics
+1587,Ontology engineering
+1588,Logic programming and answer set programming
+1589,Spatial and physical reasoning
+1590,Reasoning about belief and knowledge
+1591,Planning and scheduling
+1592,Planning for deterministic actions
+1593,Planning under uncertainty
+1594,Multi-agent planning
+1595,Planning with abstraction and generalization
+1596,Robotic planning
+1597,Evolutionary robotics
+1598,Search methodologies
+1599,Heuristic function construction
+1600,Discrete space search
+1601,Continuous space search
+1602,Randomized search
+1603,Game tree search
+1604,Abstraction and micro-operators
+1605,Search with partial observations
+1606,Control methods
+1607,Robotic planning
+1608,Evolutionary robotics
+1609,Computational control theory
+1610,Motion path planning
+1611,Philosophical/theoretical foundations of artificial intelligence
+1612,Cognitive science
+1613,Theory of mind
+1614,Distributed artificial intelligence
+1615,Multi-agent systems
+1616,Intelligent agents
+1617,Mobile agents
+1618,Cooperation and coordination
+1619,Computer vision
+1620,Computer vision tasks
+1621,Biometrics
+1622,Scene understanding
+1623,Activity recognition and understanding
+1624,Video summarization
+1625,Visual content-based indexing and retrieval
+1626,Visual inspection
+1627,Vision for robotics
+1628,Scene anomaly detection
+1629,Image and video acquisition
+1630,Camera calibration
+1631,Epipolar geometry
+1632,Computational photography
+1633,Hyperspectral imaging
+1634,Motion capture
+1635,3D imaging
+1636,Active vision
+1637,Computer vision representations
+1638,Image representations
+1639,Shape representations
+1640,Appearance and texture representations
+1641,Hierarchical representations
+1642,Computer vision problems
+1643,Interest point and salient region detections
+1644,Image segmentation
+1645,Video segmentation
+1646,Shape inference
+1647,Object detection
+1648,Object recognition
+1649,Object identification
+1650,Tracking
+1651,Reconstruction
+1652,Matching
+1653,Machine learning
+1654,Learning paradigms
+1655,Supervised learning
+1656,Ranking
+1657,Learning to rank
+1658,Supervised learning by classification
+1659,Supervised learning by regression
+1660,Structured outputs
+1661,Cost-sensitive learning
+1662,Unsupervised learning
+1663,Cluster analysis
+1664,Anomaly detection
+1665,Mixture modeling
+1666,Topic modeling
+1667,Source separation
+1668,Motif discovery
+1669,Dimensionality reduction and manifold learning
+1670,Reinforcement learning
+1671,Sequential decision making
+1672,Inverse reinforcement learning
+1673,Apprenticeship learning
+1674,Multi-agent reinforcement learning
+1675,Adversarial learning
+1676,Multi-task learning
+1677,Transfer learning
+1678,Lifelong machine learning
+1679,Learning under covariate shift
+1680,Learning settings
+1681,Batch learning
+1682,Online learning settings
+1683,Learning from demonstrations
+1684,Learning from critiques
+1685,Learning from implicit feedback
+1686,Active learning settings
+1687,Semi-supervised learning settings
+1688,Machine learning approaches
+1689,Classification and regression trees
+1690,Kernel methods
+1691,Support vector machines
+1692,Gaussian processes
+1693,Neural networks
+1694,Logical and relational learning
+1695,Inductive logic learning
+1696,Statistical relational learning
+1697,Learning in probabilistic graphical models
+1698,Maximum likelihood modeling
+1699,Maximum entropy modeling
+1700,Maximum a posteriori modeling
+1701,Mixture models
+1702,Latent variable models
+1703,Bayesian network models
+1704,Learning linear models
+1705,Perceptron algorithm
+1706,Factorization methods
+1707,Non-negative matrix factorization
+1708,Factor analysis
+1709,Principal component analysis
+1710,Canonical correlation analysis
+1711,Latent Dirichlet allocation
+1712,Rule learning
+1713,Instance-based learning
+1714,Markov decision processes
+1715,Partially-observable Markov decision processes
+1716,Stochastic games
+1717,Learning latent representations
+1718,Deep belief networks
+1719,Bio-inspired approaches
+1720,Artificial life
+1721,Evolvable hardware
+1722,Genetic algorithms
+1723,Genetic programming
+1724,Evolutionary robotics
+1725,Generative and developmental approaches
+1726,Machine learning algorithms
+1727,Dynamic programming for Markov decision processes
+1728,Value iteration
+1729,Q-learning
+1730,Policy iteration
+1731,Temporal difference learning
+1732,Approximate dynamic programming methods
+1733,Ensemble methods
+1734,Boosting
+1735,Bagging
+1736,Spectral methods
+1737,Feature selection
+1738,Regularization
+1739,Cross-validation
+1740,Modeling and simulation
+1741,Model development and analysis
+1742,Modeling methodologies
+1743,Model verification and validation
+1744,Uncertainty quantification
+1745,Simulation theory
+1746,Systems theory
+1747,Network science
+1748,Simulation types and techniques
+1749,Uncertainty quantification
+1750,Quantum mechanic simulation
+1751,Molecular simulation
+1752,Rare-event simulation
+1753,Discrete-event simulation
+1754,Agent / discrete models
+1755,Distributed simulation
+1756,Continuous simulation
+1757,Continuous models
+1758,Real-time simulation
+1759,Interactive simulation
+1760,Multiscale systems
+1761,Massively parallel and high-performance simulations
+1762,Data assimilation
+1763,Scientific visualization
+1764,Visual analytics
+1765,Simulation by animation
+1766,Artificial life
+1767,Simulation support systems
+1768,Simulation environments
+1769,Simulation languages
+1770,Simulation tools
+1771,Simulation evaluation
+1772,Computer graphics
+1773,Animation
+1774,Motion capture
+1775,Procedural animation
+1776,Physical simulation
+1777,Motion processing
+1778,Collision detection
+1779,Rendering
+1780,Rasterization
+1781,Ray tracing
+1782,Non-photorealistic rendering
+1783,Reflectance modeling
+1784,Visibility
+1785,Image manipulation
+1786,Computational photography
+1787,Image processing
+1788,Texturing
+1789,Image-based rendering
+1790,Antialiasing
+1791,Graphics systems and interfaces
+1792,Graphics processors
+1793,Graphics input devices
+1794,Mixed / augmented reality
+1795,Perception
+1796,Graphics file formats
+1797,Virtual reality
+1798,Image compression
+1799,Shape modeling
+1800,Mesh models
+1801,Mesh geometry models
+1802,Parametric curve and surface models
+1803,Point-based models
+1804,Volumetric models
+1805,Shape analysis
+1806,Distributed computing methodologies
+1807,Distributed algorithms
+1808,MapReduce algorithms
+1809,Self-organization
+1810,Distributed programming languages
+1811,Concurrent computing methodologies
+1812,Concurrent programming languages
+1813,Concurrent algorithms
+1814,Applied computing
+1815,Electronic commerce
+1816,Digital cash
+1817,E-commerce infrastructure
+1818,Electronic data interchange
+1819,Electronic funds transfer
+1820,Online shopping
+1821,Online banking
+1822,Secure online transactions
+1823,Online auctions
+1824,Enterprise computing
+1825,Enterprise information systems
+1826,Intranets
+1827,Extranets
+1828,Enterprise resource planning
+1829,Enterprise applications
+1830,Data centers
+1831,Business process management
+1832,Business process modeling
+1833,Business process management systems
+1834,Business process monitoring
+1835,Cross-organizational business processes
+1836,Business intelligence
+1837,Enterprise architectures
+1838,Enterprise architecture management
+1839,Enterprise architecture frameworks
+1840,Enterprise architecture modeling
+1841,Service-oriented architectures
+1842,Event-driven architectures
+1843,Business rules
+1844,Enterprise modeling
+1845,"Enterprise ontologies, taxonomies and vocabularies"
+1846,Enterprise data management
+1847,Reference models
+1848,Business-IT alignment
+1849,IT architectures
+1850,IT governance
+1851,Enterprise computing infrastructures
+1852,Enterprise interoperability
+1853,Enterprise application integration
+1854,Information integration and interoperability
+1855,Physical sciences and engineering
+1856,Aerospace
+1857,Avionics
+1858,Archaeology
+1859,Astronomy
+1860,Chemistry
+1861,Earth and atmospheric sciences
+1862,Environmental sciences
+1863,Engineering
+1864,Computer-aided design
+1865,Physics
+1866,Mathematics and statistics
+1867,Electronics
+1868,Avionics
+1869,Telecommunications
+1870,Internet telephony
+1871,Life and medical sciences
+1872,Computational biology
+1873,Molecular sequence analysis
+1874,Recognition of genes and regulatory elements
+1875,Molecular evolution
+1876,Computational transcriptomics
+1877,Biological networks
+1878,Sequencing and genotyping technologies
+1879,Imaging
+1880,Computational proteomics
+1881,Molecular structural biology
+1882,Computational genomics
+1883,Genomics
+1884,Computational genomics
+1885,Systems biology
+1886,Consumer health
+1887,Health care information systems
+1888,Health informatics
+1889,Bioinformatics
+1890,Metabolomics / metabonomics
+1891,Genetics
+1892,Population genetics
+1893,Proteomics
+1894,Computational proteomics
+1895,Transcriptomics
+1896,"Law, social and behavioral sciences"
+1897,Anthropology
+1898,Ethnography
+1899,Law
+1900,Psychology
+1901,Economics
+1902,Sociology
+1903,Computer forensics
+1904,Surveillance mechanisms
+1905,Investigation techniques
+1906,"Evidence collection, storage and analysis"
+1907,Network forensics
+1908,System forensics
+1909,Data recovery
+1910,Arts and humanities
+1911,Fine arts
+1912,Performing arts
+1913,Architecture (buildings)
+1914,Computer-aided design
+1915,Language translation
+1916,Media arts
+1917,Sound and music computing
+1918,Computers in other domains
+1919,Digital libraries and archives
+1920,Publishing
+1921,Military
+1922,Cyberwarfare
+1923,Cartography
+1924,Agriculture
+1925,Computing in government
+1926,Voting / election technologies
+1927,E-government
+1928,Personal computers and PC applications
+1929,Word processors
+1930,Spreadsheets
+1931,Computer games
+1932,Microcomputers
+1933,Operations research
+1934,Consumer products
+1935,Industry and manufacturing
+1936,Supply chain management
+1937,Command and control
+1938,Computer-aided manufacturing
+1939,Decision analysis
+1940,Multi-criterion optimization and decision-making
+1941,Transportation
+1942,Forecasting
+1943,Marketing
+1944,Education
+1945,Digital libraries and archives
+1946,Computer-assisted instruction
+1947,Interactive learning environments
+1948,Collaborative learning
+1949,Learning management systems
+1950,Distance learning
+1951,E-learning
+1952,Computer-managed instruction
+1953,Document management and text processing
+1954,Document searching
+1955,Document management
+1956,Text editing
+1957,Version control
+1958,Document metadata
+1959,Document capture
+1960,Document analysis
+1961,Document scanning
+1962,Graphics recognition and interpretation
+1963,Optical character recognition
+1964,Online handwriting recognition
+1965,Document preparation
+1966,Markup languages
+1967,Extensible Markup Language (XML)
+1968,Hypertext languages
+1969,Annotation
+1970,Format and notation
+1971,Multi / mixed media creation
+1972,Image composition
+1973,Hypertext / hypermedia creation
+1974,Document scripting languages
+1975,Social and professional topics
+1976,Professional topics
+1977,Computing industry
+1978,Industry statistics
+1979,Computer manufacturing
+1980,Sustainability
+1981,Management of computing and information systems
+1982,Project and people management
+1983,Project management techniques
+1984,Project staffing
+1985,Systems planning
+1986,Systems analysis and design
+1987,Systems development
+1988,Computer and information systems training
+1989,Implementation management
+1990,Hardware selection
+1991,Computing equipment management
+1992,Pricing and resource allocation
+1993,Software management
+1994,Software maintenance
+1995,Software selection and adaptation
+1996,System management
+1997,Centralization / decentralization
+1998,Technology audits
+1999,Quality assurance
+2000,Network operations
+2001,File systems management
+2002,Information system economics
+2003,History of computing
+2004,Historical people
+2005,History of hardware
+2006,History of software
+2007,History of programming languages
+2008,History of computing theory
+2009,Computing education
+2010,Computational thinking
+2011,Accreditation
+2012,Model curricula
+2013,Computing education programs
+2014,Information systems education
+2015,Computer science education
+2016,CS1
+2017,Computer engineering education
+2018,Information technology education
+2019,Information science education
+2020,Computational science and engineering education
+2021,Software engineering education
+2022,Informal education
+2023,Computing literacy
+2024,Student assessment
+2025,K-12 education
+2026,Adult education
+2027,Computing and business
+2028,Employment issues
+2029,Automation
+2030,Computer supported cooperative work
+2031,Economic impact
+2032,Offshoring
+2033,Reengineering
+2034,Socio-technical systems
+2035,Computing profession
+2036,Codes of ethics
+2037,Employment issues
+2038,Funding
+2039,Computing occupations
+2040,Computing organizations
+2041,"Testing, certification and licensing"
+2042,Assistive technologies
+2043,Computing / technology policy
+2044,Intellectual property
+2045,Digital rights management
+2046,Copyrights
+2047,Software reverse engineering
+2048,Patents
+2049,Trademarks
+2050,Internet governance / domain names
+2051,Licensing
+2052,Treaties
+2053,Database protection laws
+2054,Secondary liability
+2055,Soft intellectual property
+2056,Hardware reverse engineering
+2057,Privacy policies
+2058,Censorship
+2059,Pornography
+2060,Hate speech
+2061,Political speech
+2062,Technology and censorship
+2063,Censoring filters
+2064,Surveillance
+2065,Governmental surveillance
+2066,Corporate surveillance
+2067,Commerce policy
+2068,Taxation
+2069,Transborder data flow
+2070,Antitrust and competition
+2071,Governmental regulations
+2072,Online auctions policy
+2073,Consumer products policy
+2074,Network access control
+2075,Censoring filters
+2076,Broadband access
+2077,Net neutrality
+2078,Network access restrictions
+2079,Age-based restrictions
+2080,Acceptable use policy restrictions
+2081,Universal access
+2082,Computer crime
+2083,Social engineering attacks
+2084,Spoofing attacks
+2085,Phishing
+2086,Identity theft
+2087,Financial crime
+2088,Malware / spyware crime
+2089,Government technology policy
+2090,Governmental regulations
+2091,Import / export controls
+2092,Medical information policy
+2093,Medical records
+2094,Personal health records
+2095,Genetic information
+2096,Patient privacy
+2097,Health information exchanges
+2098,Medical technologies
+2099,Remote medicine
+2100,User characteristics
+2101,Race and ethnicity
+2102,Religious orientation
+2103,Gender
+2104,Men
+2105,Women
+2106,Sexual orientation
+2107,People with disabilities
+2108,Geographic characteristics
+2109,Cultural characteristics
+2110,Age
+2111,Children
+2112,Seniors
+2113,Adolescents

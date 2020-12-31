@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Factories\TextosByCSV;
 use App\Models\Textos;
 use App\Models\Cromossomos;
 use App\Models\Similaridade;
@@ -69,7 +70,9 @@ class Categorizacao
     public function textos($value = null)
     {
         if (isset($value)) {
-            $this->_textos = new Textos($value);
+            $this->_textos = (is_string($value)) ? 
+                TextosByCSV::create($value) : 
+                new Textos($value);
             $this->create_cromossomos($this->textos, $this->n_cromossomos);
         } else {
             return $this->_textos;

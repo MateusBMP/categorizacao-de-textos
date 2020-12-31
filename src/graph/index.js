@@ -5,7 +5,6 @@ export class Graph
 {
     constructor(data)
     {
-        console.info(data);
         this.data = data;
     }
 

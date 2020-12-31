@@ -8,14 +8,14 @@ $(async function() {
 });
 
 const loadMelhorAdaptacao = () => {
-    $.getJSON(window.location.href+"files/melhor-adaptacao.json", async (data) => {
+    $.getJSON(window.location.href+"files/outputs/melhor-adaptacao.json", async (data) => {
         setNumGeracoes(data);
         setMelhorAdaptacaoPorGeracaoChart(data);
     });
 };
 
 const loadUltimaGeracao = () => {
-    $.getJSON(window.location.href+"files/ultima-geracao.json", async (data) => {
+    $.getJSON(window.location.href+"files/outputs/ultima-geracao.json", async (data) => {
         setMaisAdaptadoGraph(data);
     });
 }
@@ -56,7 +56,7 @@ const setMaisAdaptadoGraph = (data) => {
             data.forEach(function(lin, i_lin) {
                 lin.forEach(function(col, i_col) {
                     if (data[i_lin][i_col] === 1) {
-                        formatedData.links.push({
+                        links.push({
                             source: (i_lin + 1),
                             target: (i_col + 1),
                             value: 5
@@ -67,7 +67,7 @@ const setMaisAdaptadoGraph = (data) => {
     
             return links;
         };
-        
+
         let formatedData = {
             nodes: createNodes(data.length),
             links: createLinks(data)
