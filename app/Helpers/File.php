@@ -49,10 +49,25 @@ class File
      * @param  string $data
      * @return void
      */
-    private static function fileWrite(string $dir, string $file, string $data)
+    public static function fileWrite(string $dir, string $file, string $data)
     {
         $fp = fopen(self::$config[$dir].$file, 'w');
         fwrite($fp, $data);
         fclose($fp);
+    }
+
+    /**
+     * Retorna a string do que está presente no arquivo. Em caso de erro, retorna FALSE.
+     * 
+     * @param  string $dir
+     * @param  string $file
+     * @param  string $data
+     * @return string|false
+     */
+    public static function toString(string $dir, string $file)
+    {
+        $data = file_get_contents(self::$config[$dir].$file);
+
+        return $data;
     }
 }

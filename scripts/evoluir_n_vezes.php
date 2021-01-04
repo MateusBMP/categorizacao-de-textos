@@ -30,8 +30,8 @@ for ($i = 1; $i <= $n_evolucoes; $i++)
 }
 
 // Calcula a melhor adaptacao por geracao
-$melhor_adaptacao_por_geracao = array_map(function($cromossomos) use ($categorizacao) {
-    return $cromossomos->get()[0]->adaptacao($categorizacao->textos->similaridade);
+$melhor_adaptacao_por_geracao = array_map(function($geracao) use ($categorizacao) {
+    return $geracao->get()[0]->adaptacao($categorizacao->textos->similaridade);
 }, $categorizacao->cromossomos->geracoes->get());
 
 // Escreve os arquivos
